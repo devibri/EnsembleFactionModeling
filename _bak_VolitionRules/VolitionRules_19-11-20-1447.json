@@ -1,0 +1,91 @@
+{
+	"fileName": "VolitionRules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "Lampblacks dislike Red Sashes",
+			"conditions": [
+				{
+					"category": "GangTypes",
+					"type": "thelampblacks",
+					"first": "Gang 1",
+					"value": true
+				},
+				{
+					"category": "GangTypes",
+					"type": "theredsashes",
+					"first": "Gang 2",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "Affinity",
+					"type": "friendliness",
+					"first": "Gang 1",
+					"second": "Gang 2",
+					"weight": 5,
+					"intentType": false
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_1",
+			"type": "volition"
+		},
+		{
+			"name": "Red Sashes dislike Lampblacks",
+			"conditions": [
+				{
+					"category": "GangTypes",
+					"type": "theredsashes",
+					"first": "Gang 1",
+					"value": true
+				},
+				{
+					"category": "GangTypes",
+					"type": "thelampblacks",
+					"first": "Gang 2",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "Affinity",
+					"type": "friendliness",
+					"first": "Gang 1",
+					"second": "Gang 2",
+					"weight": 5,
+					"intentType": false
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_2",
+			"type": "volition"
+		},
+		{
+			"name": "New Volition Rule",
+			"conditions": [
+				{
+					"category": "Affinity",
+					"type": "friendliness",
+					"first": "Gang 1",
+					"second": "someone",
+					"value": 0
+				}
+			],
+			"effects": [
+				{
+					"category": "Affinity",
+					"type": "friendliness",
+					"first": "Gang 1",
+					"second": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_3",
+			"type": "volition"
+		}
+	]
+}

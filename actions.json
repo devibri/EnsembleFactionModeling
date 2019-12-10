@@ -1,0 +1,249 @@
+{"fileName":"actions.json","actions":[
+	{
+		"name" : "DECREASEFRIENDLINESS",
+			"intent" : {
+				"category" : "affinity",
+				"type"  : "friendliness",
+				"intentType" : false,
+				"first" : "initiator",
+				"second" : "responder"
+			},
+			"conditions" : [],
+			"influenceRules" : [],
+			"leadsTo" : ["RAIDTREASURY", "PLANTARTIFACT"]
+		},
+		{
+		"name" : "RAIDTREASURY",
+			"conditions" : [],
+			"influenceRules" : [],
+			"leadsTo" : ["RaidTreasurySuccess", "RaidTreasuryFailure"]
+		},
+		{
+			"name" : "RaidTreasurySuccess",
+			"displayName" : "Raid Treasury <SUCCESS>",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : true,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "responder",
+				"second" : "initiator",
+				"operator" : "-",
+				"value" : 5
+			},
+			{
+				"category" : "gangpower",
+				"type" : "infamy",
+				"first" : "initiator",
+				"operator" : "+",
+				"value" : 5
+			}]
+		},
+		{
+			"name" : "RaidTreasuryFailure",
+			"displayName" : "Raid Treasury <FAILURE>",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : false,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "initiator",
+				"second" : "responder",
+				"operator" : "-",
+				"value" : 2
+			}]
+		},
+		{
+		"name" : "PLANTARTIFACT",
+			"conditions" : [],
+			"influenceRules" : [],
+			"leadsTo" : ["PlantArtifactSuccess", "PlantArtifactFailure"]
+		},
+		{
+			"name" : "PlantArtifactSuccess",
+			"displayName" : "Raid Treasury <SUCCESS>",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : true,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "responder",
+				"second" : "initiator",
+				"operator" : "-",
+				"value" : 3
+			}, 
+			{
+				"category" : "gangpower",
+				"type" : "infamy",
+				"first" : "initiator",
+				"operator" : "+",
+				"value" : 5
+			}]
+		},
+		{
+			"name" : "PlantArtifactFailure",
+			"displayName" : "Raid Treasury <FAILURE>",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : false,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "initiator",
+				"second" : "responder",
+				"operator" : "-",
+				"value" : 1
+			}]
+		},
+		{
+			"name" : "INCREASEFRIENDLINESS",
+			"intent" : {
+				"category" : "affinity",
+				"type"  : "friendliness",
+				"intentType" : true,
+				"first" : "initiator",
+				"second" : "responder"
+			},
+			"conditions" : [],
+			"influenceRules" : [],
+			"leadsTo" : ["AcceptMissionRaidTreasury", "AcceptMissionPlantArtifact"]
+		},
+		{
+			"name" : "AcceptMissionRaidTreasury",
+			"displayName" : "Accept Mission: Raid Treasury",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : true,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "responder",
+				"second" : "initiator",
+				"operator" : "+",
+				"value" : 2
+			},
+			{
+				"category" : "partypower",
+				"type" : "reputation",
+				"first" : "initiator",
+				"operator" : "+",
+				"value" : 1
+			}]
+		},
+		{
+			"name" : "AcceptMissionPlantArtifact",
+			"displayName" : "Accept Mission: Plant Artifact",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : true,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "initiator",
+				"second" : "responder",
+				"operator" : "+",
+				"value" : 2
+			}]
+		},
+		{
+		"name" : "INCREASEREPUTATION",
+			"intent" : {
+				"category" : "partypower",
+				"type"  : "reputation",
+				"intentType" : true,
+				"first" : "initiator"
+			},
+			"conditions" : [],
+			"influenceRules" : [],
+			"leadsTo" : ["CompleteMissionRaidTreasury", "CompleteMissionPLantArtifact"]
+		},
+		{
+		"name" : "Complete",
+			"conditions" : [],
+			"influenceRules" : [],
+			"leadsTo" : ["RaidTreasurySuccess", "RaidTreasuryFailure"]
+		},
+		{
+			"name" : "RaidTreasurySuccess",
+			"displayName" : "Raid Treasury <SUCCESS>",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : true,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "responder",
+				"second" : "initiator",
+				"operator" : "-",
+				"value" : 5
+			},
+			{
+				"category" : "gangpower",
+				"type" : "infamy",
+				"first" : "initiator",
+				"operator" : "+",
+				"value" : 5
+			}]
+		},
+		{
+			"name" : "RaidTreasuryFailure",
+			"displayName" : "Raid Treasury <FAILURE>",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : false,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "initiator",
+				"second" : "responder",
+				"operator" : "-",
+				"value" : 2
+			}]
+		},
+		{
+		"name" : "PLANTARTIFACT",
+			"conditions" : [],
+			"influenceRules" : [],
+			"leadsTo" : ["PlantArtifactSuccess", "PlantArtifactFailure"]
+		},
+		{
+			"name" : "PlantArtifactSuccess",
+			"displayName" : "Raid Treasury <SUCCESS>",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : true,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "responder",
+				"second" : "initiator",
+				"operator" : "-",
+				"value" : 3
+			}, 
+			{
+				"category" : "gangpower",
+				"type" : "infamy",
+				"first" : "initiator",
+				"operator" : "+",
+				"value" : 5
+			}]
+		},
+		{
+			"name" : "PlantArtifactFailure",
+			"displayName" : "Raid Treasury <FAILURE>",
+			"conditions" : [],
+			"influenceRules" : [],
+			"isAccept" : false,
+			"effects" : [{
+				"category" : "affinity",
+				"type" : "friendliness",
+				"first" : "initiator",
+				"second" : "responder",
+				"operator" : "-",
+				"value" : 1
+			}]
+		}
+]}

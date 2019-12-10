@@ -1,0 +1,255 @@
+{
+	"fileName": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "Lampblacks dislike Red Sashes",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "thelampblacks",
+					"first": "Gang 1",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "theredsashes",
+					"first": "Gang 2",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "friendliness",
+					"first": "Gang 1",
+					"second": "Gang 2",
+					"weight": 5,
+					"intentType": false
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_3",
+			"type": "volition"
+		},
+		{
+			"name": "Red Sashes dislike Lampblacks",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "theredsashes",
+					"first": "Gang 1",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "thelampblacks",
+					"first": "Gang 2",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "friendliness",
+					"first": "Gang 1",
+					"second": "Gang 2",
+					"weight": 5,
+					"intentType": false
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_4",
+			"type": "volition"
+		},
+		{
+			"name": "Gangs always want to increase their street cred",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "a gang",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "gangpower",
+					"type": "streetcred",
+					"first": "a gang",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_5",
+			"type": "volition"
+		},
+		{
+			"name": "The players want to increase friendliness with local gangs",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "theparty",
+					"first": "someone",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "faction",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "friendliness",
+					"first": "someone",
+					"weight": 2,
+					"intentType": true,
+					"second": "faction"
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_6",
+			"type": "volition"
+		},
+		{
+			"name": "The party wants to increase their reputation",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "theparty",
+					"first": "Someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "partypower",
+					"type": "reputation",
+					"first": "Someone",
+					"weight": 2,
+					"intentType": true
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_7",
+			"type": "volition"
+		},
+		{
+			"name": "Gangs don't want to increase their own infamy",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "gangpower",
+					"type": "infamy",
+					"first": "someone",
+					"weight": -2,
+					"intentType": true
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_8",
+			"type": "volition"
+		},
+		{
+			"name": "The Crows slightly dislike the Red Sashes",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "thecrows",
+					"first": "Gang 1",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "theredsashes",
+					"first": "Gang 2",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "friendliness",
+					"first": "Gang 1",
+					"weight": 1,
+					"intentType": false,
+					"second": "Gang 2"
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_9",
+			"type": "volition"
+		},
+		{
+			"name": "The Crows strongly dislike the Lampblacks",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "thecrows",
+					"first": "Gang 1",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "thelampblacks",
+					"first": "Gang 2",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "friendliness",
+					"first": "Gang 1",
+					"weight": 10,
+					"intentType": false,
+					"second": "Gang 2"
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_10",
+			"type": "volition"
+		},
+		{
+			"name": "The player party always wants to attack the gangs a bit",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "a gang",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "theparty",
+					"first": "the player party",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "friendliness",
+					"first": "the player party",
+					"weight": 1,
+					"intentType": false,
+					"second": "a gang"
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_11",
+			"type": "volition"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"fileName": "VolitionRules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "Lampblacks dislike Red Sashes",
+			"conditions": [
+				{
+					"category": "FactionMembers",
+					"type": "lyssa",
+					"first": "Gang 1",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "Affinity",
+					"type": "friendliness",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_1",
+			"type": "volition"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"fileName": "VolitionRules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "New Volition Rule",
+			"conditions": [
+				{
+					"category": "Affinity",
+					"type": "friendliness",
+					"first": "someone",
+					"second": "other",
+					"value": 0
+				}
+			],
+			"effects": [
+				{
+					"category": "Affinity",
+					"type": "friendliness",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_1",
+			"type": "volition"
+		}
+	]
+}

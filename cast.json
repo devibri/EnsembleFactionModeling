@@ -1,0 +1,20 @@
+{"cast":
+	{
+		"crows": 
+		{
+			"name": "The Crows"
+		},
+		"lampblacks":
+		{
+			"name": "The Lampblacks"
+		},
+		"redsashes":
+		{
+			"name": "The Red Sashes"
+		},
+		"playerparty":
+		{
+			"name": "The Player Party"
+		}
+	}
+}

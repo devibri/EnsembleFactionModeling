@@ -1,0 +1,48 @@
+{
+	"history": [{
+		"pos": 0,
+		"data": [{
+			"category" : "gangtype",
+			"type" : "thecrows",
+			"first" : "crows",
+			"value" : true
+				},{
+			"category" : "gangtype",
+			"type" : "thelampblacks",
+			"first" : "lampblacks",
+			"value" : true
+				},{
+			"category" : "gangtype",
+			"type" : "theredsashes",
+			"first" : "redsashes",
+			"value" : true
+				},{
+			"category" : "gangtype",
+			"type" : "anygang",
+			"first" : "crows",
+			"value" : true
+				},{
+			"category" : "gangtype",
+			"type" : "anygang",
+			"first" : "lampblacks",
+			"value" : true
+				},{
+			"category" : "gangtype",
+			"type" : "anygang",
+			"first" : "redsashes",
+			"value" : true
+				},{
+			"category" : "gangpower",
+			"type" : "money",
+			"first" : "crows",
+			"value" : 10
+			},
+			{
+			"category" : "gangtype",
+			"type" : "theparty",
+			"first" : "playerparty",
+			"value" : true
+			}
+		]}
+	]
+}

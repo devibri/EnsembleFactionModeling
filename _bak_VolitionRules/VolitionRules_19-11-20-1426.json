@@ -1,0 +1,29 @@
+{
+	"fileName": "VolitionRules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "New Volition Rule",
+			"conditions": [
+				{
+					"category": "Faction",
+					"type": "crows",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "Faction",
+					"type": "crows",
+					"first": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_1",
+			"type": "volition"
+		}
+	]
+}

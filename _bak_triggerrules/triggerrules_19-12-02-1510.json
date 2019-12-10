@@ -1,0 +1,35 @@
+{
+	"fileName": "triggerrules",
+	"type": "trigger",
+	"rules": [
+		{
+			"name": "Gangs with high infamy get in trouble with law",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "someone",
+					"value": true
+				},
+				{
+					"category": "gangpower",
+					"type": "infamy",
+					"first": "someone",
+					"value": 9,
+					"operator": ">"
+				}
+			],
+			"effects": [
+				{
+					"category": "GangProblems",
+					"type": "introublewithlaw",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"origin": "triggerrules",
+			"id": "triggerRules_7",
+			"type": "trigger"
+		}
+	]
+}

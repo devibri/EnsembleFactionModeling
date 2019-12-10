@@ -1,0 +1,36 @@
+{
+	"fileName": "VolitionRules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "Members of the Lampblacks dislike members of the Red Sashes.",
+			"conditions": [
+				{
+					"category": "Faction",
+					"type": "lampblacks",
+					"first": "Person 1",
+					"value": true
+				},
+				{
+					"category": "Faction",
+					"type": "red sashes",
+					"first": "Person 2",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "Affinity",
+					"type": "friendliness",
+					"first": "Person 1",
+					"weight": 5,
+					"intentType": false,
+					"second": "Person 2"
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_1",
+			"type": "volition"
+		}
+	]
+}

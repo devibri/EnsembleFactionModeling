@@ -16,19 +16,6 @@
 			"defaultValue": false
 		},
 		{
-			"actionable": false,
-			"directionType": "undirected",
-			"isBoolean": true,
-			"cloneEachTimeStep": true,
-			"category": "factionmembers",
-			"types": [
-				"roric",
-				"lyssa",
-				"bazco",
-				"mylera"
-			]
-		},
-		{
 			"actionable": true,
 			"directionType": "undirected",
 			"isBoolean": false,
@@ -72,19 +59,6 @@
 			"minValue": 0
 		},
 		{
-			"actionable": true,
-			"directionType": "reciprocal",
-			"isBoolean": false,
-			"cloneEachTimeStep": true,
-			"category": "affinity",
-			"types": [
-				"friendliness"
-			],
-			"defaultValue": 0,
-			"maxValue": 10,
-			"minValue": 0
-		},
-		{
 			"actionable": false,
 			"directionType": "undirected",
 			"isBoolean": true,
@@ -94,6 +68,31 @@
 				"alive"
 			],
 			"defaultValue": true
+		},
+		{
+			"actionable": false,
+			"directionType": "undirected",
+			"isBoolean": true,
+			"cloneEachTimeStep": true,
+			"category": "gangmemberstatus",
+			"types": [
+				"leader"
+			],
+			"defaultValue": true
+		},
+		{
+			"actionable": true,
+			"directionType": "reciprocal",
+			"isBoolean": false,
+			"cloneEachTimeStep": true,
+			"category": "affinity",
+			"types": [
+				"friendliness",
+				"influence"
+			],
+			"defaultValue": 0,
+			"maxValue": 10,
+			"minValue": 0
 		}
 	]
 }

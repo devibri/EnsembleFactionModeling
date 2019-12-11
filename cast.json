@@ -15,6 +15,26 @@
 		"playerparty":
 		{
 			"name": "The Player Party"
+		},
+		"playerparty":
+		{
+			"name": "The Player Party"
+		},
+		"roric":
+		{
+			"name": "Roric (Hardended, Domineering)"
+		},
+		"lyssa":
+		{
+			"name": "Lyssa (Cunning, Secretive)"
+		},
+		"bazco":
+		{
+			"name": "Bazco (Charismatic, Confident)"
+		},
+		"mylera":
+		{
+			"name": "Mylera (Evasive, Ruthless)"
 		}
 	}
 }

@@ -16,6 +16,12 @@
 					"type": "theredsashes",
 					"first": "Gang 2",
 					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "Gang 2",
+					"value": true
 				}
 			],
 			"effects": [
@@ -29,7 +35,7 @@
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_3",
+			"id": "volitionRules_9",
 			"type": "volition"
 		},
 		{
@@ -46,6 +52,12 @@
 					"type": "thelampblacks",
 					"first": "Gang 2",
 					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "Gang 2",
+					"value": true
 				}
 			],
 			"effects": [
@@ -59,7 +71,7 @@
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_4",
+			"id": "volitionRules_10",
 			"type": "volition"
 		},
 		{
@@ -82,7 +94,7 @@
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_5",
+			"id": "volitionRules_11",
 			"type": "volition"
 		},
 		{
@@ -112,7 +124,7 @@
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_6",
+			"id": "volitionRules_12",
 			"type": "volition"
 		},
 		{
@@ -135,7 +147,7 @@
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_7",
+			"id": "volitionRules_13",
 			"type": "volition"
 		},
 		{
@@ -153,12 +165,12 @@
 					"category": "gangpower",
 					"type": "infamy",
 					"first": "someone",
-					"weight": -2,
+					"weight": -1,
 					"intentType": true
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_8",
+			"id": "volitionRules_14",
 			"type": "volition"
 		},
 		{
@@ -175,6 +187,12 @@
 					"type": "theredsashes",
 					"first": "Gang 2",
 					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "Gang 2",
+					"value": true
 				}
 			],
 			"effects": [
@@ -188,7 +206,7 @@
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_9",
+			"id": "volitionRules_15",
 			"type": "volition"
 		},
 		{
@@ -205,6 +223,12 @@
 					"type": "thelampblacks",
 					"first": "Gang 2",
 					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "Gang 2",
+					"value": true
 				}
 			],
 			"effects": [
@@ -218,22 +242,22 @@
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_10",
+			"id": "volitionRules_16",
 			"type": "volition"
 		},
 		{
-			"name": "The player party always wants to attack the gangs a bit",
+			"name": "Gangs really want to take out weaker gangs",
 			"conditions": [
 				{
 					"category": "gangtype",
 					"type": "anygang",
-					"first": "a gang",
+					"first": "gang",
 					"value": true
 				},
 				{
 					"category": "gangtype",
-					"type": "theparty",
-					"first": "the player party",
+					"type": "anygang",
+					"first": "gang2",
 					"value": true
 				}
 			],
@@ -241,14 +265,74 @@
 				{
 					"category": "affinity",
 					"type": "friendliness",
-					"first": "the player party",
-					"weight": 1,
+					"first": "gang",
+					"weight": 10,
 					"intentType": false,
-					"second": "a gang"
+					"second": "gang2"
 				}
 			],
 			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
-			"id": "volitionRules_11",
+			"id": "volitionRules_17",
+			"type": "volition"
+		},
+		{
+			"name": "The party always kind of wants to help other gangs",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "theparty",
+					"first": "Someone",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "gang",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "friendliness",
+					"first": "Someone",
+					"weight": 1,
+					"intentType": true,
+					"second": "gang"
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_18",
+			"type": "volition"
+		},
+		{
+			"name": "The party wants to decrease the influence of other gangs",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "theparty",
+					"first": "someone",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "gang",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "influence",
+					"first": "someone",
+					"weight": 2,
+					"intentType": false,
+					"second": "gang"
+				}
+			],
+			"origin": "C:\\Users\\dacha\\OneDrive\\Documents\\GitHub\\EnsembleGameAI/VolitionRules.json",
+			"id": "volitionRules_19",
 			"type": "volition"
 		}
 	]

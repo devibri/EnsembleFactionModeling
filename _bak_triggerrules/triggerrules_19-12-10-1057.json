@@ -111,7 +111,7 @@
 			"conditions": [
 				{
 					"category": "gangtype",
-					"type": "theredsashes",
+					"type": "thelampblacks",
 					"first": "someone",
 					"value": true
 				},
@@ -253,7 +253,7 @@
 				}
 			],
 			"origin": "triggerrules",
-			"id": "triggerRules_7",
+			"id": "triggerRules_16",
 			"type": "trigger"
 		},
 		{
@@ -282,7 +282,37 @@
 				}
 			],
 			"origin": "triggerrules",
-			"id": "triggerRules_8",
+			"id": "triggerRules_17",
+			"type": "trigger"
+		},
+		{
+			"name": "Gangs really want to take out weaker gangs",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "gang",
+					"value": true
+				},
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "gang2",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "affinity",
+					"type": "friendliness",
+					"first": "gang",
+					"value": 10,
+					"operator": "-",
+					"second": "gang2"
+				}
+			],
+			"origin": "triggerrules",
+			"id": "triggerRules_18",
 			"type": "trigger"
 		}
 	]

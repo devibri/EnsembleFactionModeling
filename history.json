@@ -38,10 +38,133 @@
 			"value" : 10
 			},
 			{
+			"category" : "gangpower",
+			"type" : "money",
+			"first" : "redsashes",
+			"value" : 10
+			},
+			{
+			"category" : "gangpower",
+			"type" : "money",
+			"first" : "lampblacks",
+			"value" : 10
+			},
+			{
 			"category" : "gangtype",
 			"type" : "theparty",
 			"first" : "playerparty",
 			"value" : true
+			},
+			{
+			"category" : "gangtype",
+			"type" : "thecrows",
+			"first" : "roric",
+			"value" : true
+			},
+			{
+			"category" : "gangtype",
+			"type" : "thecrows",
+			"first" : "lyssa",
+			"value" : true
+			},
+			{
+			"category" : "gangtype",
+			"type" : "thelampblacks",
+			"first" : "bazco",
+			"value" : true
+			},
+			{
+			"category" : "gangtype",
+			"type" : "theredsashes",
+			"first" : "mylera",
+			"value" : true
+			},
+			{
+			"category" : "status",
+			"type" : "alive",
+			"first" : "roric",
+			"value" : false
+			},
+			{
+			"category" : "status",
+			"type" : "alive",
+			"first" : "lyssa",
+			"value" : true
+			},
+			{
+			"category" : "status",
+			"type" : "alive",
+			"first" : "bazco",
+			"value" : true
+			},
+			{
+			"category" : "status",
+			"type" : "alive",
+			"first" : "mylera",
+			"value" : true
+			},
+			{
+			"category" : "gangmemberstatus",
+			"type" : "leader",
+			"first" : "lyssa",
+			"value" : true
+			},
+			{
+			"category" : "gangmemberstatus",
+			"type" : "leader",
+			"first" : "bazco",
+			"value" : true
+			},
+			{
+			"category" : "gangmemberstatus",
+			"type" : "leader",
+			"first" : "mylera",
+			"value" : true
+			},
+			{
+			"category" : "gangpower",
+			"type" : "strength",
+			"first" : "crows",
+			"value" : 5
+			},
+			{
+			"category" : "gangpower",
+			"type" : "strength",
+			"first" : "redsashes",
+			"value" : 2
+			},
+			{
+			"category" : "gangpower",
+			"type" : "strength",
+			"first" : "lampblacks",
+			"value" : 6
+			},
+			{
+			"category" : "partypower",
+			"type" : "reputation",
+			"first" : "playerparty",
+			"value" : 1
+			},
+			{
+			"category" : "affinity",
+			"type" : "friendliness",
+			"first" : "playerparty",
+			"second" : "crows",
+			"value" : 5
+			},
+			{
+			"category" : "affinity",
+			"type" : "friendliness",
+			"first" : "playerparty",
+			"second" : "redsashes",
+			"value" : 5
+			},
+			{
+			"category" : "affinity",
+			"type" : "friendliness",
+			"first" : "playerparty",
+			"second" : "lampblacks",
+			"value" : 5
 			}
 		]}
 	]

@@ -1,0 +1,92 @@
+{
+	"fileName": "triggerrules",
+	"type": "trigger",
+	"rules": [
+		{
+			"name": "Gangs with high infamy get in trouble with law",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "someone",
+					"value": true
+				},
+				{
+					"category": "gangpower",
+					"type": "infamy",
+					"first": "someone",
+					"value": 9,
+					"operator": ">"
+				}
+			],
+			"effects": [
+				{
+					"category": "gangproblems",
+					"type": "introublewithlaw",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"origin": "triggerrules",
+			"id": "triggerRules_1",
+			"type": "trigger"
+		},
+		{
+			"name": "Gangs that run out of money are bankrupt",
+			"conditions": [
+				{
+					"category": "gangtype",
+					"type": "anygang",
+					"first": "gang",
+					"value": true
+				},
+				{
+					"category": "gangpower",
+					"type": "money",
+					"first": "gang",
+					"value": 1,
+					"operator": "<"
+				}
+			],
+			"effects": [
+				{
+					"category": "gangproblems",
+					"type": "bankrupt",
+					"first": "gang",
+					"value": true
+				}
+			],
+			"origin": "triggerrules",
+			"id": "triggerRules_2",
+			"type": "trigger"
+		},
+		{
+			"name": "Gangs who lose their leader are leaderless",
+			"conditions": [
+				{
+					"category": "status",
+					"type": "alive",
+					"first": "someone",
+					"value": false
+				},
+				{
+					"category": "gangtype",
+					"type": "thecrows",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "gangtype",
+					"type": "thecrows",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"origin": "triggerrules",
+			"id": "triggerRules_12",
+			"type": "trigger"
+		}
+	]
+}
